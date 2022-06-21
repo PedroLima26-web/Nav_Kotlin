@@ -17,10 +17,10 @@ class FirstFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.first_fragment, container, false)
-        val butao1: Button = view.findViewById(R.id.butao1)
-        val butao2: Button = view.findViewById(R.id.butao2)
-        butao1.setOnClickListener{Navigation.findNavController(butao1).navigate(R.id.action_firstFragment_to_secondFragment)}
-        butao2.setOnClickListener{Navigation.findNavController(butao1).navigate(R.id.action_firstFragment_to_thirdFragment)}
+        val butao01: Button = view.findViewById(R.id.butao1)
+        val butao02: Button = view.findViewById(R.id.butao2)
+        butao01.setOnClickListener{Navigation.findNavController(view).navigate(R.id.action_firstFragment_to_secondFragment)}
+        butao02.setOnClickListener{Navigation.findNavController(view).navigate(R.id.action_firstFragment_to_thirdFragment)}
         return view
     }
 }

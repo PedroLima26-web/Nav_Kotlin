@@ -15,7 +15,7 @@ class ThirdFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.second_fragment, container, false)
+        val view = inflater.inflate(R.layout.third_fragment, container, false)
         view.setOnClickListener { Navigation.findNavController(view).navigate(R.id.action_thirdFragment_to_fifthFragment) }
         return view
     }
